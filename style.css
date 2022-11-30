@@ -1,10 +1,13 @@
 body{
-    padding: 40px;
+    padding: 0;
     margin: 0;
     background-color: #BFD7EA;
+    box-sizing: border-box;
 }
 
 figure{
+    padding: 0;
+    margin: 0;
 }
 
 /* стирание стрелок поля ввода*/
@@ -16,6 +19,12 @@ figure{
   display: none;
 }
 
+.count_in {
+  -moz-appearance: textfield;
+}
+.count_in::-webkit-inner-spin-button {
+  display: none;
+}
 /**/
 
 [contenteditable="true"]:focus,
@@ -26,37 +35,114 @@ button:focus {
     outline: none;
 }
 
-ul{
-    list-style-type: none;
-    margin-top:450px;
+/*Длина пароля*/
+
+.len_box{
+    flex-direction: row;
+    display:inline-flex;
+    flex-shrink:1;
+    margin:30px;
+    margin-bottom:20px;
+    width:500px;
 }
 
 .len_s{
-    position: absolute;
-    left:40vw;
-    top:20vh;
     font-family: Candara, serif;
     font-size: 30px;
+    height: 50px;
+    color:white;
 }
 
-input{
-    position: absolute;
-    left:50vw;
-    top:40vh;
-    width:70px;
-    border:none;
-    background-color: #BFD7EA;
-    font-size: 20px;
+.len_in{
+    text-align: center;
+    border-bottom-style: solid;
+    width:100px;
 }
+
+/**/
+
+/*Количество паролей*/
+
+.count_box{
+    display: flex;
+    flex-shrink:1;
+    margin:30px;
+    margin-top:20px;
+}
+
+.count_s{
+    font-family: Candara, serif;
+    font-size: 30px;
+    height: 50px;
+    color:white;
+}
+
+.count_in{
+    text-align: center;
+    border-bottom-style: solid;
+    width:100px;
+
+}
+
+/**/
+
+input{
+    border:none;
+    background-color: black;
+    font-size: 25px;
+    color:white;
+    margin-left: 5px;
+}
+
+
 
 button{
     position: absolute;
-    left:46vw;
-    top:55vh;
-    font-size: 15px;
-    back
+    top:60vh;
+    left:180px;
+    font-size: 20px;
+    font-family: Candara, serif;
+    background-color: black;
+    color: white;
+    border:2px white dashed;
+    height: 40px;
 }
 
-.password{
-    text-align: center;
+button:hover{
+    background-color: #303033;
+
+}
+
+/*Пароль, список*/
+
+.password_box{
+    position: relative;
+    left:600px;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+}
+
+ul{
+    position: absolute;
+    left: 40%;
+    list-style-type: none;
+}
+
+li{
+    font-family: Candara, serif;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+/**/
+
+.color{
+    position: absolute;
+    top:0;
+    left:0;
+    width:580px;
+    height:100vh;
+    background-color: black;
+    z-index: -1;
 }

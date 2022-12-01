@@ -13,7 +13,14 @@ figure{
 .name{
     font-size: 50px;
     color: white;
+    margin-right: 30px;
     padding:40px;
+    padding-left: 30px;
+    border-bottom-color: #303033;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width:580px;
+    height:120px;
 }
 
 /* стирание стрелок поля ввода*/
@@ -74,7 +81,7 @@ button:focus {
     display: flex;
     flex-shrink:1;
     margin:30px;
-    margin-top:60px;
+    margin-top:50px;
 }
 
 .count_s{
@@ -93,6 +100,7 @@ button:focus {
 
 /**/
 
+
 input{
     border:none;
     background-color: black;
@@ -101,13 +109,25 @@ input{
     margin-left: 5px;
 }
 
+.attention_display{
+    display: none;
+}
 
+.attention{
+    position: relative;
+    left:156px;
+    top:260px;
+    font-size:20px;
+    color:white;
+    font-family: Candara, serif;
+
+}
 
 button{
     position: absolute;
     top:80vh;
-    left:160px;
-    font-size: 20px;
+    left:145px;
+    font-size: 25px;
     font-family: Candara, serif;
     background-color: black;
     color: white;
@@ -123,26 +143,30 @@ button:hover{
 /*Пароль, список*/
 
 .password_box{
-    position: relative;
-    left:600px;
-    display: flex;
-    width: 50vw;
+    position: absolute;
+    left:550px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 100px 100px 100px;
+    top: 10px;
     height: 50vh;
+    width: 60%;
 }
 
 ul{
-    position: absolute;
-    left: 40%;
+    left: 50px;
     list-style-type: none;
 }
 
 li{
+    position: relative;
     font-family: Candara, serif;
-    font-size: 35px;
-    padding-top: 10px;
+    font-size: 31px;
+    padding-top: 15px;
 }
 
 /**/
+
 
 .color{
     position: absolute;
@@ -150,7 +174,6 @@ li{
     left:0;
     width:580px;
     height:100vh;
-    background-color: black;
+    background-color: black; /* #1d1d20 альтернатива */
     z-index: -1;
 }
-

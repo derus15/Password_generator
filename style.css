@@ -10,7 +10,7 @@ figure{
     margin: 0;
 }
 
-.name{
+.name{                       
     font-size: 50px;
     color: white;
     margin-right: 30px;
@@ -38,6 +38,7 @@ figure{
 .count_in::-webkit-inner-spin-button {
   display: none;
 }
+
 /**/
 
 [contenteditable="true"]:focus,
@@ -46,6 +47,14 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+input{
+    border:none;
+    background-color: black;
+    font-size: 25px;
+    color:white;
+    margin-left: 5px;
 }
 
 /*Длина пароля*/
@@ -75,6 +84,7 @@ button:focus {
 
 /**/
 
+
 /*Количество паролей*/
 
 .count_box{
@@ -101,32 +111,34 @@ button:focus {
 /**/
 
 
-input{
-    border:none;
-    background-color: black;
-    font-size: 25px;
-    color:white;
-    margin-left: 5px;
-}
-
-.attention_display{
-    display: none;
-}
+/*Кнопки*/
 
 .attention{
     position: relative;
-    left:156px;
-    top:260px;
-    font-size:20px;
+    left:190px;
+    top:270px;
+    font-size:21px;
     color:white;
     font-family: Candara, serif;
 
 }
 
+.delete{
+    position: absolute;
+    top:80vh;
+    left:300px;
+    font-size: 25px;
+    font-family: Candara, serif;
+    background-color: black;
+    color: white;
+    border:2px white dashed;
+    height: 40px;
+}
+
 button{
     position: absolute;
     top:80vh;
-    left:145px;
+    left:80px;
     font-size: 25px;
     font-family: Candara, serif;
     background-color: black;
@@ -137,14 +149,19 @@ button{
 
 button:hover{
     background-color: #303033;
-
 }
 
-/*Пароль, список*/
+button:active{
+    background-color: black;
+}
+
+/**/
+
+/*Пароль, экран*/
 
 .password_box{
     position: absolute;
-    left:550px;
+    left:530px;
     display: grid;
     justify-content: space-around;
     grid-template-columns: 100px 100px 100px;
@@ -167,13 +184,12 @@ li{
 
 /**/
 
-
 .color{
     position: absolute;
     top:0;
     left:0;
     width:580px;
     height:100vh;
-    background-color: black; /* #1d1d20 альтернатива */
+    background-color: black;
     z-index: -1;
 }

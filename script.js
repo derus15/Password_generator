@@ -5,11 +5,14 @@
   let input = document.querySelector('input');
   let count = document.querySelector('.count_in');
   let attention = document.querySelector('.attention');
+  let button_delete = document.querySelector('.delete');
 
   let char = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm123453126789qwertsdcjf'
   let password_b;
   let num = 0;
   let len_column = 0;
+  attention.hidden = true;
+
 
 
 button.onclick = function() {
@@ -45,9 +48,19 @@ button.onclick = function() {
         }
         console.log(len_column)
         if(len_column === 45){
-            attention.classList.remove('attention_display')
+            attention.hidden = false;
             button.setAttribute("disabled", "disabled");
+            break
         }
     }
 }
 
+button_delete.onclick = function() {
+    let list = document.querySelectorAll('ul');
+    for (let column of list){                            
+        column.innerHTML = ''
+    }
+    attention.hidden = true;
+    button.removeAttribute("disabled");
+    len_column = 0;
+}

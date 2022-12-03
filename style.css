@@ -1,21 +1,18 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #8D99AE;      /*оригинал - #BFD7EA*/
+    background-color: #8D99AE;     
     box-sizing: border-box;
 }
-
-/*Альтернативы левого фона: black*/
-/*Альтернативы правого фона: #95B2B8 - более зеленый голубой */
 
 figure{
     padding: 0;
     margin: 0;
 }
 
-.name{                        /*можно заменить на h1*/
+.name{                       
     font-size: 45px;
-    color: #EDF2F4;           /*оригинал - белый*/
+    color: #EDF2F4;           
     margin-right: 30px;
     padding:40px;
     padding-left: 30px;
@@ -33,7 +30,7 @@ figure{
     left:0;
     width:580px;
     height:100vh;
-    background-color: #2B2D42; /* #1d1d20 альтернатива */    /*оригинал - #141414*/
+    background-color: #2B2D42; 
     z-index: -1;
 }
 
@@ -129,7 +126,7 @@ input{
 
 .attention{
     position: relative;
-    left:190px;
+    left:170px;
     top:270px;
     font-size:21px;
     color: #EDF2F4;
@@ -152,7 +149,7 @@ input{
 button{
     position: absolute;
     top:80vh;
-    left:80px;
+    left:50px;
     font-size: 25px;
     font-family: "Igra Sans", serif;
     background-color: #2B2D42;

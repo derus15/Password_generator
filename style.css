@@ -1,26 +1,40 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #BFD7EA;
+    background-color: #8D99AE;      /*оригинал - #BFD7EA*/
     box-sizing: border-box;
 }
+
+/*Альтернативы левого фона: black*/
+/*Альтернативы правого фона: #95B2B8 - более зеленый голубой */
 
 figure{
     padding: 0;
     margin: 0;
 }
 
-.name{                       
-    font-size: 50px;
-    color: white;
+.name{                        /*можно заменить на h1*/
+    font-size: 45px;
+    color: #EDF2F4;           /*оригинал - белый*/
     margin-right: 30px;
     padding:40px;
     padding-left: 30px;
-    border-bottom-color: #303033;
+    border-bottom-color: #EDF2F4;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     width:580px;
     height:120px;
+    font-family: "Igra Sans", serif;
+}
+
+.color{
+    position: absolute;
+    top:0;
+    left:0;
+    width:580px;
+    height:100vh;
+    background-color: #2B2D42; /* #1d1d20 альтернатива */    /*оригинал - #141414*/
+    z-index: -1;
 }
 
 /* стирание стрелок поля ввода*/
@@ -51,9 +65,9 @@ button:focus {
 
 input{
     border:none;
-    background-color: black;
+    background-color: #2B2D42;
     font-size: 25px;
-    color:white;
+    color: #EDF2F4;
     margin-left: 5px;
 }
 
@@ -70,10 +84,10 @@ input{
 }
 
 .len_s{
-    font-family: Candara, serif;
+    font-family: "Igra Sans", serif;
     font-size: 30px;
     height: 50px;
-    color:white;
+    color: #EDF2F4;
 }
 
 .len_in{
@@ -95,10 +109,10 @@ input{
 }
 
 .count_s{
-    font-family: Candara, serif;
+    font-family: "Igra Sans", serif;
     font-size: 30px;
     height: 50px;
-    color:white;
+    color: #EDF2F4;
 }
 
 .count_in{
@@ -118,8 +132,8 @@ input{
     left:190px;
     top:270px;
     font-size:21px;
-    color:white;
-    font-family: Candara, serif;
+    color: #EDF2F4;
+    font-family: "Igra Sans", serif;
 
 }
 
@@ -128,10 +142,10 @@ input{
     top:80vh;
     left:300px;
     font-size: 25px;
-    font-family: Candara, serif;
-    background-color: black;
-    color: white;
-    border:2px white dashed;
+    font-family: "Igra Sans", serif;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    border:2px #EDF2F4 dashed;
     height: 40px;
 }
 
@@ -140,19 +154,19 @@ button{
     top:80vh;
     left:80px;
     font-size: 25px;
-    font-family: Candara, serif;
-    background-color: black;
-    color: white;
-    border:2px white dashed;
+    font-family: "Igra Sans", serif;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    border:2px #EDF2F4 dashed;
     height: 40px;
 }
 
 button:hover{
-    background-color: #303033;
+    background-color: #8D99AE;
 }
 
 button:active{
-    background-color: black;
+    background-color: #2B2D42;
 }
 
 /**/
@@ -161,7 +175,7 @@ button:active{
 
 .password_box{
     position: absolute;
-    left:530px;
+    left: 510px;
     display: grid;
     justify-content: space-around;
     grid-template-columns: 100px 100px 100px;
@@ -177,19 +191,10 @@ ul{
 
 li{
     position: relative;
-    font-family: Candara, serif;
+    font-family: "Igra Sans", serif;
     font-size: 31px;
     padding-top: 15px;
+    color: #EDF2F4;
 }
 
 /**/
-
-.color{
-    position: absolute;
-    top:0;
-    left:0;
-    width:580px;
-    height:100vh;
-    background-color: black;
-    z-index: -1;
-}

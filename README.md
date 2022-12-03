@@ -1,3 +1,3 @@
 # Простой генератор паролей 
 
-https://derus15.github.io/Password_generator/   ~ 5,5 часов
+https://derus15.github.io/Password_generator/   ~ 7,5 часов

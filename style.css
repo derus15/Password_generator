@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #8D99AE;     
+    background-color: #8D99AE;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ figure{
     margin: 0;
 }
 
-.name{                       
+.name{
     font-size: 45px;
     color: #EDF2F4;           
     margin-right: 30px;
@@ -30,7 +30,7 @@ figure{
     left:0;
     width:580px;
     height:100vh;
-    background-color: #2B2D42; 
+    background-color: #2B2D42;
     z-index: -1;
 }
 
@@ -75,7 +75,7 @@ input{
     display:inline-flex;
     flex-shrink:1;
     margin:30px;
-    margin-top:60px;
+    margin-top:50px;
     margin-bottom:20px;
     width:500px;
 }
@@ -90,7 +90,8 @@ input{
 .len_in{
     text-align: center;
     border-bottom-style: solid;
-    width:100px;
+    border-bottom-width: 2px;
+    width:70px;
 }
 
 /**/
@@ -100,9 +101,7 @@ input{
 
 .count_box{
     display: flex;
-    flex-shrink:1;
     margin:30px;
-    margin-top:50px;
 }
 
 .count_s{
@@ -115,46 +114,99 @@ input{
 .count_in{
     text-align: center;
     border-bottom-style: solid;
-    width:100px;
-
+    border-bottom-width: 2px;
+    width:70px;
 }
 
 /**/
 
+/*Чек боксы*/
+
+label{
+    margin-left: 30px;
+    font-family: "Igra Sans", serif;
+    font-size:30px;
+    color:#EDF2F4;
+}
+
+input[type=checkbox]{
+     display: none;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.checkbox_int{
+    margin-top:55px;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("check.svg");
+}
+
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: white;
+}
+
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/**/
 
 /*Кнопки*/
 
 .attention{
-    position: relative;
-    left:170px;
-    top:270px;
+    position: absolute;
+    left:165px;
+    top:665px;
     font-size:21px;
     color: #EDF2F4;
     font-family: "Igra Sans", serif;
-
+    height: 20px;
 }
 
 .delete{
     position: absolute;
-    top:80vh;
+    top:82vh;
     left:300px;
     font-size: 25px;
     font-family: "Igra Sans", serif;
     background-color: #2B2D42;
     color: #EDF2F4;
-    border:2px #EDF2F4 dashed;
+    border: 2px #EDF2F4 dashed;
     height: 40px;
 }
 
 button{
     position: absolute;
-    top:80vh;
+    top:82vh;
     left:50px;
     font-size: 25px;
     font-family: "Igra Sans", serif;
     background-color: #2B2D42;
     color: #EDF2F4;
-    border:2px #EDF2F4 dashed;
+    border: 2px #EDF2F4 dashed;
     height: 40px;
 }
 
@@ -195,3 +247,14 @@ li{
 }
 
 /**/
+
+::-moz-selection{
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+
+::selection{
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+

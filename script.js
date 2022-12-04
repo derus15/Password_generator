@@ -1,4 +1,4 @@
-let column_1 = document.querySelector('.password_1');
+  let column_1 = document.querySelector('.password_1');
   let column_2 = document.querySelector('.password_2');
   let column_3 = document.querySelector('.password_3');
   let button_add = document.querySelector('button');
@@ -6,8 +6,10 @@ let column_1 = document.querySelector('.password_1');
   let count = document.querySelector('.count_in');
   let attention = document.querySelector('.attention');
   let button_delete = document.querySelector('.delete');
+  let int = document.getElementById('int')
 
-  let char = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm123453126789qwertsdcjf'
+  let char = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjQWERTYIOPASDklzxcvbnmqwertsdcjf'
+  let int_char = '1567890qwhertyuio234pasdf840klzgh345xcvbnm5QW465YUIOP17a890ASDF3GHJKL909VBNMyuiop2asdfg26yuiopasdfgh'
   let password_b;
   let num = 0;
   let len_column = 0;
@@ -16,9 +18,17 @@ let column_1 = document.querySelector('.password_1');
   function CreateElement(ul,li){
       for (let j = 0; j < input.value; j++){
           num = Math.floor(Math.random() * 100);
-          password_b += char[num];
-          li.textContent = password_b;
-          ul.append(li);
+          if (int.checked){
+            password_b += int_char[num];
+            li.textContent = password_b;
+            ul.append(li);
+            console.log('hi_int');
+          }else{
+            password_b += char[num];
+            li.textContent = password_b;
+            ul.append(li);
+            console.log('hi_char');
+          }
       }
 }
 
@@ -50,7 +60,7 @@ button_add.onclick = function() {
 
 button_delete.onclick = function() {
     let list = document.querySelectorAll('ul');
-    for (let column of list){                            
+    for (let column of list){
         column.textContent = ''
     }
     attention.hidden = true;

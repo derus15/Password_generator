@@ -10,9 +10,11 @@ figure{
     margin: 0;
 }
 
+/*Заголовок и фон*/
+
 .name{
     font-size: 45px;
-    color: #EDF2F4;           
+    color: #EDF2F4;
     margin-right: 30px;
     padding:40px;
     padding-left: 30px;
@@ -33,6 +35,9 @@ figure{
     background-color: #2B2D42;
     z-index: -1;
 }
+
+/**/
+
 
 /* стирание стрелок поля ввода*/
 
@@ -120,6 +125,7 @@ input{
 
 /**/
 
+
 /*Чек боксы*/
 
 label{
@@ -143,8 +149,6 @@ input[type=checkbox]{
   display: inline-block;
   width: 1em;
   height: 1em;
-  flex-shrink: 0;
-  flex-grow: 0;
   border: 1px solid #adb5bd;
   border-radius: 0.25em;
   margin-right: 0.5em;
@@ -153,8 +157,12 @@ input[type=checkbox]{
   background-size: 50% 50%;
 }
 
+.checkbox_spec{
+    margin-top:50px;
+}
+
 .checkbox_int{
-    margin-top:55px;
+    margin-top:60px;
 }
 
 .custom-checkbox:checked+label::before {
@@ -174,12 +182,13 @@ input[type=checkbox]{
 
 /**/
 
+
 /*Кнопки*/
 
 .attention{
     position: absolute;
     left:165px;
-    top:665px;
+    top:650px;
     font-size:21px;
     color: #EDF2F4;
     font-family: "Igra Sans", serif;
@@ -188,7 +197,7 @@ input[type=checkbox]{
 
 .delete{
     position: absolute;
-    top:82vh;
+    top:80vh;
     left:300px;
     font-size: 25px;
     font-family: "Igra Sans", serif;
@@ -200,7 +209,7 @@ input[type=checkbox]{
 
 button{
     position: absolute;
-    top:82vh;
+    top:80vh;
     left:50px;
     font-size: 25px;
     font-family: "Igra Sans", serif;
@@ -219,6 +228,7 @@ button:active{
 }
 
 /**/
+
 
 /*Пароль, экран*/
 
